@@ -17,6 +17,7 @@ function exception_handler($exception)
 	echo "EXCEPTION: " . $exception->getMessage();
 }
 
+ob_start();
 set_exception_handler('exception_handler');
 
 $wallet = new MoneyStore();
@@ -64,3 +65,10 @@ printf("We have a balance of %.2f.\n", $wallet->exposeBalance());
 
 // How much money does the cash register have in it?
 printf("The cash register has a balance of %.2f.\n", $cashRegister->exposeBalance());
+
+// Detect if we're seeing this via a web server.
+if (php_sapi_name() != 'cli' && isset($_SERVER))
+{
+	$text = ob_get_clean();
+	echo '<pre>'; echo $text; echo '</pre>';
+}
