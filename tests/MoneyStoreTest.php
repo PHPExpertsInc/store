@@ -1,8 +1,8 @@
 <?php
 
-require dirname(__FILE__) . '/../PrettyException.inc.php';
-require dirname(__FILE__) . '/../MoneyException.inc.php';
-require dirname(__FILE__) . '/../MoneyStore.inc.php';
+require_once dirname(__FILE__) . '/../PrettyException.inc.php';
+require_once dirname(__FILE__) . '/../MoneyException.inc.php';
+require_once dirname(__FILE__) . '/../MoneyStore.inc.php';
 
 class MoneyStoreTest extends PHPUnit_Framework_TestCase
 {

@@ -1,5 +1,5 @@
 <?php
-//require_once dirname(__FILE__) . '/../Product.inc.php';
+require_once dirname(__FILE__) . '/../Product.inc.php';
 require_once dirname(__FILE__) . '/../MoneyStore.inc.php';
 require_once dirname(__FILE__) . '/../CashRegister.inc.php';
 

@@ -1,6 +1,6 @@
 <?php
 
-require dirname(__FILE__) . '/../ProductFactory.inc.php';
+require_once dirname(__FILE__) . '/../ProductFactory.inc.php';
 
 class ProductFactoryTest extends PHPUnit_Framework_TestCase
 {

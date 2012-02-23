@@ -10,6 +10,11 @@ class CashRegister
 		$this->money = $money;
 	}
 
+	/**
+	  * Attempt to purchase a product.
+	  * @throws MoneyStoreException
+	  * @return boolean true on success
+	  */
 	public function purchase(Product $product, MoneyStore $money)
 	{
 		// Make sure that we're not robbing ourselves to pay for the product.
@@ -24,6 +29,10 @@ class CashRegister
 		return true;
 	}
 
+	/**
+	  * Returns the remaining balance.
+	  * @return float remaining balance
+	  */
 	public function exposeBalance()
 	{
 		return $this->money->exposeBalance();

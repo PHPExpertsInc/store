@@ -1,5 +1,9 @@
 <?php
 
+
+
+require_once 'MoneyException.inc.php';
+
 class MoneyStoreException extends MoneyException
 {
 	const INSUFFICIENT_FUNDS = "There are insufficient funds for the transaction.";

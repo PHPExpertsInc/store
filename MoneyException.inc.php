@@ -1,5 +1,7 @@
 <?php
 
+require_once 'PrettyException.inc.php';
+
 class MoneyException extends PrettyException
 {
 	const NON_NUMERIC_AMOUNT = "Amount must be numeric";
