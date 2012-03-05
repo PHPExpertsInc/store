@@ -1,5 +1,13 @@
 <?php
 
+/**
+* CashRegister
+ [x] Balance starts at zero
+ [x] Can purchase a product
+ [x] Cannot purchase an unaffordable product
+ [x] Will not accept payment from itself
+ [x] Shows proper balance after purchase
+*/
 class CashRegister
 {
 	/** @var MoneyStore **/

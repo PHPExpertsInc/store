@@ -1,9 +1,22 @@
 <?php
+
+/**
+* Product
+ [x] Must have valid name and price
+ [x] Exposes name properly
+ [x] Exposes price properly
+ [x] Can be accessed as string
+*/
 class Product
 {
 	private $name;
 	private $price;
 	
+	/**
+	* @param string $name
+	* @param float $price
+	* @return Product
+	*/
 	public function __construct($name, $price)
 	{
 		if (!is_string($name))
